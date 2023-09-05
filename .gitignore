@@ -1,0 +1,6 @@
+venv
+build
+restoenv
+dist
+logs
+RestoDelPredoct.egg-info

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delivery Time</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url({{url_for('static',filename='image1.jpg')}});
+    background-size:cover;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .delivery-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+    border-radius: 8px;
+    padding: 20px;
+    position: absolute; /* Position the div absolutely */
+    top: 0; /* Position it at the top of the viewport */
+    left: 50; /* Align it to the left */
+    width: 50%; /* Make it span the entire width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  h1 {
+    margin-top: 0;
+    color: #333333;
+  }
+  p {
+    color: #666666;
+    
+  }
+</style>
+</head>
+<body>
+  <div class="delivery-container">
+    <h1>Estimated Delivery Time</h1>
+    <p><b>{{final_result}} Minute</b></p>
+  </div>
+</body>
+</html>
